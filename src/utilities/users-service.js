@@ -27,6 +27,7 @@ export async function signUp(userData) {
   
   export function getUser() {
     const token = getToken();
+    // console.log(token)
     // If there's a token, return the user in the payload, otherwise return null
     return token ? JSON.parse(atob(token.split('.')[1])).user : null;
   }

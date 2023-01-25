@@ -1,0 +1,39 @@
+.AttractionCard {
+}
+
+.card-container {
+  box-sizing: border-box;
+  margin: 1vw;
+  padding: 0vw;
+  border: 5px solid transparent;
+  border-radius: 5px;
+  width: 17vw;
+  height: 51vh;
+}
+
+.card-container:hover {
+  border: 5px solid orange;
+  border-radius: 5px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.attraction-info {
+  background-color: lightyellow;
+  text-decoration: none;
+  position: relative;
+  top: 70%;
+}
+
+h3 {
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+h4 {
+  padding: 0 0 10px 0;
+  margin: 0;
+}

@@ -1,0 +1,16 @@
+.NavBar {
+    background-color: lightblue;
+    height: 30px;
+}
+
+.FloatLeft {
+    float: left;
+}
+
+.FloatRight {
+    float: right;
+}
+
+.Pad {
+    padding: 5px 10px;
+}

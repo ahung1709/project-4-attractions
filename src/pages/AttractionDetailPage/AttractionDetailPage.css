@@ -1,0 +1,29 @@
+.AttractionDetailPage {
+}
+
+.attraction-detail-containter {
+  display: flex;
+  padding: 10px;
+  width: 50vw;
+  margin: auto;
+}
+
+.attraction-detail-info {
+  padding: 20px;
+  margin: 10px;
+}
+
+.attraction-detail-cast-container {
+  padding: 10px 0 0 0;
+  margin: 0;
+  text-align: left;
+}
+
+.attraction-detail-cast-title {
+  padding: 0;
+  margin: 0;
+}
+
+.attraction-detail-poster {
+  height: 80vh;
+}
