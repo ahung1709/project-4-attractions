@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 // const bcrypt = require('bcrypt');
 
 const attractionSchema = new Schema({
+    user: { type: Schema.Types.ObjectId, ref: 'User', required: true },
     name: {type: String, required: true},
     coverPicture: {type: String}, 
     description: {type: String}, 

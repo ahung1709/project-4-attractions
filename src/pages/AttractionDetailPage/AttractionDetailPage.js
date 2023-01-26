@@ -4,12 +4,14 @@ import "./AttractionDetailPage.css";
 
 export default function AttractionDetailPage({ attractions }) {
   let { attractionName } = useParams();
+  console.log("attractionName:")
+  console.log(attractionName)
   const attractionFound = attractions.find((attraction) => attraction.name === attractionName);
 
   return (
     <div className="AttractionDetailPage">
       <div className="attraction-detail-containter">
-        <Link className="Pad" to="/attractions/edit">Edit</Link>
+        <Link className="Pad" to={`/attractions/${attractionFound.name}/edit`}>Edit</Link>
         <Link className="Pad" to="/attractions/delete">Delete</Link>
       
         <div className="attraction-detail-info">
