@@ -13,6 +13,10 @@ router.post('/', attractionsCtrl.create)
 console.log("inside routes/api/attractions before attractionsCtrl.update")
 router.put('/', attractionsCtrl.update)
 
+// DELETE /api/attractions/:id
+console.log("inside routes/api/attractions before attractionsCtrl.delete")
+router.delete('/', attractionsCtrl.delete)
+
 // router.post("/login", usersCtrl.login)
 // router.get('/check-token', ensureLoggedIn, usersCtrl.checkToken);
 

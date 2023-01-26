@@ -4,6 +4,7 @@ module.exports = {
     index, 
     create, 
     update, 
+    delete: deleteAttraction, 
 }
 
 async function index(req, res) {
@@ -48,4 +49,17 @@ async function update(req, res) {
     //     else{
     //         console.log("Updated Attraction : ", attraction);
     // })
+}
+
+async function deleteAttraction(req, res) {
+    console.log("attractionsCtrl.delete333")
+    console.log(req.body)
+    console.log(req.body.id)
+    // console.log(req.params)
+    try {
+        const attraction = await Attraction.findByIdAndDelete(req.body.id);
+        res.json(attraction)
+    } catch(err) {
+        res.json(err)
+    }
 }

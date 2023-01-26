@@ -23,3 +23,8 @@ export function edit(attractionData) {
     // return sendRequest(BASE_URL + "id", 'PUT', attractionData)
 }
 
+export function deleteAttraction(attractionData) {
+    console.log("inside attractionsAPI.deleteAttraction")
+    return sendRequest(BASE_URL, 'DELETE', attractionData)
+}
+

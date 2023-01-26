@@ -11,7 +11,7 @@ export default function AllAttractionPage({attractions}) {
 
     return (        
         <main className="AllAttractionPage">
-            <h1>AllAttractionPage</h1>
+            <h1>World Attractions</h1>
             <Link className="Pad" to="/attractions/new">New Attraction</Link>
             <div className="">{attractionsEls}</div>
         </main>

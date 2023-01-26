@@ -12,7 +12,7 @@ export default function AttractionDetailPage({ attractions }) {
     <div className="AttractionDetailPage">
       <div className="attraction-detail-containter">
         <Link className="Pad" to={`/attractions/${attractionFound._id}/edit`}>Edit</Link>
-        <Link className="Pad" to="/attractions/delete">Delete</Link>
+        <Link className="Pad" to={`/attractions/${attractionFound._id}/delete`}>Delete</Link>
       
         <div className="attraction-detail-info">
           <h1>{attractionFound.name}</h1>

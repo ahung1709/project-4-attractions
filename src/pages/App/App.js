@@ -9,6 +9,7 @@ import MyAttractionPage from '../MyAttractionPage/MyAttractionPage';
 import AllAttractionPage from '../AllAttractionPage/AllAttractionPage';
 import NewAttractionPage from '../NewAttractionPage/NewAttractionPage';
 import EditAttractionPage from '../EditAttractionPage/EditAttractionPage';
+import DeleteAttractionPage from '../DeleteAttractionPage/DeleteAttractionPage';
 import AttractionDetailPage from '../AttractionDetailPage/AttractionDetailPage';
 
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
@@ -71,6 +72,12 @@ export default function App() {
     getAllAttractions().then(res => { setAttractions(res) })
   }
 
+  async function handleDeleteAttraction(attractionData) {
+    console.log("Inside handleDeleteAttractions")
+    const attraction = await attractionsAPI.deleteAttraction(attractionData)
+    getAllAttractions().then(res => { setAttractions(res) })
+  }
+
   return (
     <main className="App">
       { user ?
@@ -83,6 +90,7 @@ export default function App() {
             <Route path="/attractions/new" element={<NewAttractionPage handleAddAttraction={handleAddAttraction} />} />
             <Route path="/attractions/:attractionName" element={<AttractionDetailPage attractions={attractions} />} />
             <Route path="/attractions/:attractionId/edit" element={<EditAttractionPage handleEditAttraction={handleEditAttraction} attractions={attractions} />} />
+            <Route path="/attractions/:attractionId/delete" element={<DeleteAttractionPage handleDeleteAttraction={handleDeleteAttraction} attractions={attractions} />} />
 
             <Route path="/orders/new" element={<NewOrderPage />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
