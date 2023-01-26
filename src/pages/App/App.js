@@ -36,8 +36,8 @@ export default function App() {
     })
   }, [])
 
-  console.log("attractions outsideUseEffect:")
-  console.log(attractions)
+  // console.log("attractions outsideUseEffect:")
+  // console.log(attractions)
   
   // function addAttraction(attraction) {
   //   let attractionCopy = [...attractions, attraction]
