@@ -51,11 +51,24 @@ export default function App() {
   }
 
   async function handleEditAttraction(attractionData) {
+    console.log("Inside handleEditAttractions")
     // let attractionCopy = [...attractions, attraction]
     // setAttractions(attractionCopy)
 
     const attraction = await attractionsAPI.edit(attractionData)
-    // setAttractions([...attractions, attraction])
+    // console.log("attraction:")
+    // console.log(attraction)
+    // let attractionsCopy = [...attractions]
+    // console.log("attractionsCopy: ")
+    // console.log(attractionsCopy)
+    // const index = attractionsCopy.findIndex(item => item._id === attractionData._id)
+    // attractionsCopy[index] = attraction
+    // console.log("newAttractionsCopy:")
+    // console.log(attractionsCopy)
+
+    // setAttractions([...attractionsCopy])
+
+    getAllAttractions().then(res => { setAttractions(res) })
   }
 
   return (
@@ -69,7 +82,7 @@ export default function App() {
             <Route path="/attractions/all" element={<AllAttractionPage attractions={attractions} />} />
             <Route path="/attractions/new" element={<NewAttractionPage handleAddAttraction={handleAddAttraction} />} />
             <Route path="/attractions/:attractionName" element={<AttractionDetailPage attractions={attractions} />} />
-            <Route path="/attractions/:attractionName/edit" element={<EditAttractionPage handleEditAttraction={handleEditAttraction} attractions={attractions} />} />
+            <Route path="/attractions/:attractionId/edit" element={<EditAttractionPage handleEditAttraction={handleEditAttraction} attractions={attractions} />} />
 
             <Route path="/orders/new" element={<NewOrderPage />} />
             <Route path="/orders" element={<OrderHistoryPage />} />

@@ -4,15 +4,14 @@ import { useParams } from "react-router-dom";
 
 export default function NewEditAttractionForm({ handleAddAttraction, handleEditAttraction, newOrEdit, attractions }) {
 
-  let { attractionName } = useParams();
+  let { attractionId } = useParams();
   // console.log("attractionName:")
   // console.log(attractionName)
 
   let attractionEdit = { name: "", coverPicture: "", description: "" }
-
-  if (attractionName) {
-    const attractionFound = attractions.find((attraction) => attraction.name === attractionName); 
-    attractionEdit = { name: attractionFound.name, coverPicture: attractionFound.coverPicture, description: attractionFound.description }
+  if (attractionId) {
+    const attractionFound = attractions.find((attraction) => attraction._id === attractionId); 
+    attractionEdit = { id: attractionId, name: attractionFound.name, coverPicture: attractionFound.coverPicture, description: attractionFound.description }
     // console.log(attractionEdit)
   } 
 
@@ -35,6 +34,7 @@ export default function NewEditAttractionForm({ handleAddAttraction, handleEditA
       // addAttraction(formData);
       setFormData({ name: "", coverPicture: "", description: "" });
     } else if ((newOrEdit === "edit")) {
+      handleEditAttraction(formData);
 
     }
   }

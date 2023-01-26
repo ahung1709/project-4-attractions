@@ -26,6 +26,7 @@ app.use(require('./config/checkToken'));
 app.use('/api/users', require('./routes/api/users'));
 
 const ensureLoggedIn = require('./config/ensureLoggedIn');
+// console.log("inside server.js before api/attractions")
 app.use('/api/attractions', ensureLoggedIn, require('./routes/api/attractions'))
 
 

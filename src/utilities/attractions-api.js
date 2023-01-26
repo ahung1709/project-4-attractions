@@ -18,6 +18,8 @@ export function add(attractionData) {
 }
 
 export function edit(attractionData) {
-    return sendRequest(BASE_URL, 'POST', attractionData)
+    // console.log("inside attractionsAPI.edit")
+    return sendRequest(BASE_URL, 'PUT', attractionData)
+    // return sendRequest(BASE_URL + "id", 'PUT', attractionData)
 }
 
