@@ -25,7 +25,7 @@
     * JavaScript
 * Front-end framework
     * React.js
-* Back-end Web application framework
+* Back-end web application framework
     * Express.js
 * Server environment
     * Node.js
