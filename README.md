@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Project 4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### World Attraction App
+#### Description and background of the app
+* The World Attraction App is a world attraction-focused promotion service which publishes world attraction profiles for travel planning.
+* It lets users create their own attraction, and share them to other users for travel planning
 
-## Available Scripts
+### Screenshots
+#### Screenshot #1 - Landing page before login
+![Screenshot #1](https://i.imgur.com/4OD5aNj.png)
 
-In the project directory, you can run:
+#### Screenshot #2 - Landing page after login / View all attractions
+![Screenshot #2](https://i.imgur.com/GcyLw3t.png)
 
-### `npm start`
+#### Screenshot #3 - View a particular attraction
+![Screenshot #3](https://i.imgur.com/zP9zBDs.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Screenshot #4 - Edit a particular attraction
+![Screenshot #4](https://i.imgur.com/gO4l49m.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies Used
+* Web languages
+    * HTML
+    * CSS
+    * JavaScript
+* Server environment
+    * Node.js
+* Node.js module
+    * dotenv
+    * mongoose
+    * react-router-dom
+    * bcrypt
+    * jsonwebtoken
+* Authorization and authentication
+    * Token-based authentication
+* Database
+    * MongoDB
 
-### `npm test`
+### Getting Started
+#### Click on the following link to access the Restaurant Reviewer app
+* [Trello board - project planning](https://trello.com/b/KuWZWOF9/sei56-project-4-planning)
+* [Project 4 - Site](https://project-4-attractions.herokuapp.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Next Steps
+#### The following functionality can be added 
+* User model
+    * Add fields to the user model to allow users to input more profile details, such as user level (operaters of certain attractions (museum, national parks, etc.), regular users)
+* Attraction
+    * Add map feature for location
+    * Allow users to upload more pictures of the attraction
+* Other models
+    * Add location model to allow users to choose the city, province/state, country, continent
+    * Add itinerary model to allow users to add attractions to their itinerary
+    * Add review and favorites and review model to allow users to review attractions and add attractions to favorites
+* Other features
+    * Allow users to change theme of the app
+    * Add messaging function between users to share their experience
+    * Consume third-party APIs for populating attraction information to database
+    * Consume API for Imgur
+    * Upload images/assets to AWS S3

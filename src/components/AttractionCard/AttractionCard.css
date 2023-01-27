@@ -22,7 +22,6 @@
 }
 
 .attraction-thumbnail-container {
-  border: 1px solid black;
   height: 96%;
   width: 20%;
   margin: 0px 10px;
@@ -45,7 +44,6 @@
 }
 
 .attraction-info-container {
-  border: 1px solid black;
   width: 76%;
   height: 96%;
   text-decoration: none;

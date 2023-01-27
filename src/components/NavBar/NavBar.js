@@ -14,7 +14,7 @@ export default function NavBar({ user, setUser }) {
     return (
         <nav className="NavBar">
             <div className="FloatLeft Pad">
-                <Link className="Pad" to="/attractions/all">World attractions</Link>
+                <Link className="Pad" to="/attractions/all">World Attractions</Link>
             </div>
             <div className="FloatRight Pad">
                 &nbsp;&nbsp;<span className="Pad">Welcome! {user.name}</span>

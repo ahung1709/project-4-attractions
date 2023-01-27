@@ -49,7 +49,6 @@ async function login(req, res) {
 
         const token = createJWT(user)
         res.status(200).json(token)
-        // console.log(user)
     } catch(err) {
         res.status(400).json(err)
     }

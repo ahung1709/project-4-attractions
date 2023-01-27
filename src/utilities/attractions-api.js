@@ -19,7 +19,6 @@ export function edit(attractionData) {
 }
 
 export function deleteAttraction(attractionData) {
-    console.log("inside attractionsAPI.deleteAttraction")
     return sendRequest(BASE_URL, 'DELETE', attractionData)
 }
 

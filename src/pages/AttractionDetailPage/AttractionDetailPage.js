@@ -4,8 +4,6 @@ import "./AttractionDetailPage.css";
 
 export default function AttractionDetailPage({ attractions }) {
   let { attractionName } = useParams();
-  console.log("attractionName:")
-  console.log(attractionName)
   const attractionFound = attractions.find((attraction) => attraction.name === attractionName);
 
   return (

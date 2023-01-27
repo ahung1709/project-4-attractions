@@ -32,13 +32,11 @@ export default function App() {
   }
 
   async function handleEditAttraction(attractionData) {
-    console.log("Inside handleEditAttractions")
     const attraction = await attractionsAPI.edit(attractionData)
     getAllAttractions().then(res => { setAttractions(res) })
   }
 
   async function handleDeleteAttraction(attractionData) {
-    console.log("Inside handleDeleteAttractions")
     const attraction = await attractionsAPI.deleteAttraction(attractionData)
     getAllAttractions().then(res => { setAttractions(res) })
   }
