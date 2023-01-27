@@ -37,7 +37,7 @@
     * MongoDB
 
 ### Getting Started
-#### Click on the following link to access the Restaurant Reviewer app
+#### Click on the following link to access the World Attraction app
 * [Trello board - project planning](https://trello.com/b/KuWZWOF9/sei56-project-4-planning)
 * [Project 4 - Site](https://project-4-attractions.herokuapp.com/)
 
@@ -51,7 +51,7 @@
 * Other models
     * Add location model to allow users to choose the city, province/state, country, continent
     * Add itinerary model to allow users to add attractions to their itinerary
-    * Add review and favorites and review model to allow users to review attractions and add attractions to favorites
+    * Add review and favorite model to allow users to review attractions and add attractions to favorites
 * Other features
     * Allow users to change theme of the app
     * Add messaging function between users to share their experience
