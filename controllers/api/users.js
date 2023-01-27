@@ -28,7 +28,6 @@ async function create(req, res) {
         // Yes, we can use res.json to send back just a string
         // The client code needs to take this into consideration
         res.status(200).json(token)
-    //     console.log(user)
     //     // create JWT
     //     // response with the JWT
     } catch(err) {
@@ -36,12 +35,6 @@ async function create(req, res) {
         // 400 = Bad Request
         res.status(400).json(err)
     }
-    // res.json({
-    //     user: { 
-    //         name: req.body.name, 
-    //         email: req.body.email
-    //     }
-    // })
 }
 
 async function login(req, res) {
@@ -56,16 +49,14 @@ async function login(req, res) {
 
         const token = createJWT(user)
         res.status(200).json(token)
-        console.log(user)
+        // console.log(user)
     } catch(err) {
-        console.log(err)
         res.status(400).json(err)
     }
 }
 
 function checkToken(req, res) {
     // req.user will always be there for you when a token is sent
-    console.log('req.user', req.user);
     res.json(req.exp);
 }
 

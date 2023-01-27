@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom';
 import AttractionCard from "../../components/AttractionCard/AttractionCard";
-// import "./AllAttractionPage.css";
 
 export default function AllAttractionPage({attractions}) {
-    console.log(attractions)
-
     const attractionsEls = attractions.map(function(attraction) {
         return <AttractionCard key={attraction.name} attraction={attraction} />
     })

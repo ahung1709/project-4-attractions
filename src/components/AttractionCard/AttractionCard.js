@@ -5,13 +5,7 @@ export default function AttractionCard({ attraction }) {
     return (
       <main className="AttractionCard">
         <Link className="card-link" to={`/attractions/${attraction.name}`}>
-          <div
-            className="card-container"
-            // style={{
-            //   background: `url(${attraction.coverPicture}) no-repeat`,
-            //   backgroundSize: "cover"
-            // }}
-          >
+          <div className="card-container">
             <div className="attraction-thumbnail-container">
               <img className="attraction-thumbnail" src={attraction.coverPicture} />
             </div>

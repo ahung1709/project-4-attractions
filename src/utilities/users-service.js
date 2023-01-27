@@ -27,7 +27,6 @@ export async function signUp(userData) {
   
   export function getUser() {
     const token = getToken();
-    // console.log(token)
     // If there's a token, return the user in the payload, otherwise return null
     return token ? JSON.parse(atob(token.split('.')[1])).user : null;
   }
@@ -39,12 +38,10 @@ export async function signUp(userData) {
   export async function login(credentials) {
     const token = await usersAPI.login(credentials)
     localStorage.setItem('token', token)
-    // console.log(token)
     return token
   }
 
   export async function checkToken() {
-    // alert('clicked')
     return usersAPI.checkToken().then(dateStr => new Date(dateStr))
   }
   

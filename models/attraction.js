@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-// const bcrypt = require('bcrypt');
 
 const attractionSchema = new Schema({
     user: { type: Schema.Types.ObjectId, ref: 'User', required: true },
@@ -12,7 +11,6 @@ const attractionSchema = new Schema({
     timestamps: true,
     toJSON: {
       transform: function(doc, ret) {
-        // delete ret.password;
         return ret;
       }
     }

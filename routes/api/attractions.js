@@ -7,17 +7,12 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 router.get('/', attractionsCtrl.index);
 
 // POST /api/attractions
-router.post('/', attractionsCtrl.create)
+router.post('/', ensureLoggedIn, attractionsCtrl.create)
 
 // PUT /api/attractions/:id
-console.log("inside routes/api/attractions before attractionsCtrl.update")
-router.put('/', attractionsCtrl.update)
+router.put('/', ensureLoggedIn, attractionsCtrl.update)
 
 // DELETE /api/attractions/:id
-console.log("inside routes/api/attractions before attractionsCtrl.delete")
-router.delete('/', attractionsCtrl.delete)
-
-// router.post("/login", usersCtrl.login)
-// router.get('/check-token', ensureLoggedIn, usersCtrl.checkToken);
+router.delete('/', ensureLoggedIn, attractionsCtrl.delete)
 
 module.exports = router;

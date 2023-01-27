@@ -20,10 +20,6 @@ export default function AttractionDetailPage({ attractions }) {
           <h3>{attractionFound.location}</h3>
           <hr />
           <h3>{attractionFound.description}</h3>
-          {/* <div className="movie-detail-cast-container">
-            <h3 className="movie-detail-cast-title">Cast members</h3>
-            <p>{movieFound.cast.join(", ")}</p>
-          </div> */}
         </div>
         <div className="attraction-detail-poster-container">
           <img

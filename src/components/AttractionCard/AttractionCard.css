@@ -1,13 +1,10 @@
-.AttractionCard {
-}
-
 .card-container {
   box-sizing: border-box;
   margin: 1vw;
   padding: 0vw;
   border: 5px solid transparent;
   border-radius: 5px;
-  width: 70vw; /* 17 */
+  width: 70vw;
   height: 20vh;
   display: inline-block;
   position: relative;
@@ -31,55 +28,33 @@
   margin: 0px 10px;
   float: left;
   position: relative;
-  /* display: table-cell; */
-  /* vertical-align: middle; */
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-
 }
 
 .attraction-thumbnail {
   max-height: 100%;
   max-width: 100%;  
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-
-  /* margin: 0 auto; */
-  /* margin: auto auto; */
-  /* width: 10vw; */
-  /* height: 18vh; */
-  /* display: inline-block; */
-
-  
 }
 
 .attraction-info-container {
   border: 1px solid black;
   width: 76%;
   height: 96%;
-  /* background-color: lightyellow; */
   text-decoration: none;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  /* top: 70%; */
-  /* display: inline-block; */
-  
+  transform: translateY(-50%); 
   float: left;
-}
-
-.attraction-name {
-  
 }
 
 h2 {
