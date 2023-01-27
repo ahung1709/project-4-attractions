@@ -23,6 +23,10 @@
     * HTML
     * CSS
     * JavaScript
+* Front-end framework
+    * React.js
+* Back-end Web application framework
+    * Express.js
 * Server environment
     * Node.js
 * Node.js module
