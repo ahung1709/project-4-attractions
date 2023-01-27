@@ -9,10 +9,16 @@ export default function NewEditAttractionForm({ handleAddAttraction, handleEditA
   // console.log(attractionName)
   const navigate = useNavigate()
 
-  let attractionEdit = { name: "", coverPicture: "", description: "" }
+  let attractionEdit = { name: "", coverPicture: "", location: "", description: "" }
   if (attractionId) {
     const attractionFound = attractions.find((attraction) => attraction._id === attractionId); 
-    attractionEdit = { id: attractionId, name: attractionFound.name, coverPicture: attractionFound.coverPicture, description: attractionFound.description }
+    attractionEdit = { 
+      id: attractionId, 
+      name: attractionFound.name, 
+      coverPicture: attractionFound.coverPicture, 
+      location: attractionFound.location, 
+      description: attractionFound.description 
+    }
     // console.log(attractionEdit)
   } 
 
@@ -33,7 +39,7 @@ export default function NewEditAttractionForm({ handleAddAttraction, handleEditA
     if (newOrEdit === "new") {
       handleAddAttraction(formData);
       // addAttraction(formData);
-      setFormData({ name: "", coverPicture: "", description: "" });
+      setFormData({ name: "", coverPicture: "", location: "", description: "" });
       navigate('/attractions/all')
     } else if ((newOrEdit === "edit")) {
       handleEditAttraction(formData);
@@ -60,6 +66,13 @@ export default function NewEditAttractionForm({ handleAddAttraction, handleEditA
             id="coverPicture"
             name="coverPicture"
             value={formData.coverPicture}
+            onChange={handleChange}
+        />
+        <label>Location</label>
+        <input
+            id="location"
+            name="location"
+            value={formData.location}
             onChange={handleChange}
         />
         <label>Description</label>

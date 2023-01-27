@@ -10,20 +10,22 @@ export default function AttractionDetailPage({ attractions }) {
 
   return (
     <div className="AttractionDetailPage">
-      <div className="attraction-detail-containter">
+      <div className="buttons-container">
         <Link className="Pad" to={`/attractions/${attractionFound._id}/edit`}>Edit</Link>
         <Link className="Pad" to={`/attractions/${attractionFound._id}/delete`}>Delete</Link>
-      
+      </div>
+      <div className="attraction-detail-containter">       
         <div className="attraction-detail-info">
           <h1>{attractionFound.name}</h1>
-          <h3>Description: {attractionFound.description}</h3>
+          <h3>{attractionFound.location}</h3>
           <hr />
+          <h3>{attractionFound.description}</h3>
           {/* <div className="movie-detail-cast-container">
             <h3 className="movie-detail-cast-title">Cast members</h3>
             <p>{movieFound.cast.join(", ")}</p>
           </div> */}
         </div>
-        <div>
+        <div className="attraction-detail-poster-container">
           <img
             className="attraction-detail-poster"
             src={attractionFound.coverPicture}

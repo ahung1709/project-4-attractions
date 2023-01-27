@@ -5,15 +5,15 @@ import { getAllAttractions } from '../../utilities/attractions-service';
 import * as attractionsAPI from '../../utilities/attractions-api';
 
 import AuthPage from '../AuthPage/AuthPage';
-import MyAttractionPage from '../MyAttractionPage/MyAttractionPage';
+// import MyAttractionPage from '../MyAttractionPage/MyAttractionPage';
 import AllAttractionPage from '../AllAttractionPage/AllAttractionPage';
 import NewAttractionPage from '../NewAttractionPage/NewAttractionPage';
 import EditAttractionPage from '../EditAttractionPage/EditAttractionPage';
 import DeleteAttractionPage from '../DeleteAttractionPage/DeleteAttractionPage';
 import AttractionDetailPage from '../AttractionDetailPage/AttractionDetailPage';
 
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+// import NewOrderPage from '../NewOrderPage/NewOrderPage';
+// import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 
 import './App.css';
@@ -85,15 +85,15 @@ export default function App() {
           <NavBar user={user} setUser={setUser} />
           {/* <h1>{attractions}</h1> */}
           <Routes>
-            <Route path="/attractions" element={<MyAttractionPage />} />
+            {/* <Route path="/attractions" element={<MyAttractionPage />} /> */}
             <Route path="/attractions/all" element={<AllAttractionPage attractions={attractions} />} />
             <Route path="/attractions/new" element={<NewAttractionPage handleAddAttraction={handleAddAttraction} />} />
             <Route path="/attractions/:attractionName" element={<AttractionDetailPage attractions={attractions} />} />
             <Route path="/attractions/:attractionId/edit" element={<EditAttractionPage handleEditAttraction={handleEditAttraction} attractions={attractions} />} />
             <Route path="/attractions/:attractionId/delete" element={<DeleteAttractionPage handleDeleteAttraction={handleDeleteAttraction} attractions={attractions} />} />
 
-            <Route path="/orders/new" element={<NewOrderPage />} />
-            <Route path="/orders" element={<OrderHistoryPage />} />
+            {/* <Route path="/orders/new" element={<NewOrderPage />} /> */}
+            {/* <Route path="/orders" element={<OrderHistoryPage />} /> */}
           </Routes>
         </>
         :

@@ -1,29 +1,44 @@
 .AttractionDetailPage {
 }
 
+.buttons-container {
+  padding: 0;
+  margin:10px;
+}
+
 .attraction-detail-containter {
+  /* border: 2px solid black; */
   display: flex;
   padding: 10px;
-  width: 50vw;
+  width: 80vw;
   margin: auto;
+  position: relative;
 }
 
 .attraction-detail-info {
-  padding: 20px;
-  margin: 10px;
+  /* border: 2px solid black; */
+  padding: 2px 5px;
+  margin: 5px;
+  width: 40vw;
 }
 
-.attraction-detail-cast-container {
-  padding: 10px 0 0 0;
-  margin: 0;
-  text-align: left;
-}
-
-.attraction-detail-cast-title {
-  padding: 0;
-  margin: 0;
+.attraction-detail-poster-container {
+  margin: 10px 5px;
+  width:50%;
 }
 
 .attraction-detail-poster {
-  height: 80vh;
+  /* border: 2px solid black; */
+  
+  max-width: 100%;
+  max-height: 100%;
+  /* height: 100%; */
+  /* width: 40vw;
+  height: 80vh; */
+}
+
+h1 {
+  text-align: left;
+  padding:0;
+  margin:5px 0;
 }
