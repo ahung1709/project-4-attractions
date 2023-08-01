@@ -20,10 +20,17 @@ export default function App() {
   const [user, setUser] = useState(getUser());
   const [attractions, setAttractions] = useState([])
 
+  const getAttractions = async () => {
+    try {
+      const allAttractions = await getAllAttractions()
+      setAttractions(allAttractions)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   useEffect(()=> {
-    getAllAttractions().then(res => {
-      setAttractions(res)
-    })
+    getAttractions();
   }, [])
 
   async function handleAddAttraction(attractionData) {
